@@ -19,29 +19,29 @@ Como base de datos principal para el DataWarehouse
 ## Flujo de control
 
 
-![Flujo de control](imagenes/FlujoControl.jpg)	
+![Flujo de control](imagenes/FlujoControl.png)	
 
 
 Iniciamos el flujo con Tareas Ejecutar SQL, que nos sirven para la limpieza de las tablas de nuestras bases de datos 
 de alimentacion y nuestra base de datos del DataWarehouse.
 
-![Limpieza de tablas y DataWarehouse](imagenes/Limpieza.jpg)
+![Limpieza de tablas y DataWarehouse](imagenes/Limpieza.png)
 
 Luego de la limpieza, ejecutamos una Tarea script para insertar los datos en las tablas temporales de compras y ventas 
 de cada base de datos.
 
 ### Definicion de variables
 
-![Definicion de variables](imagenes/Variables.jpg)
+![Definicion de variables](imagenes/Variables.png)
 
 ### Asignacion de variables
 
-![Asignación de variables](imagenes/Variables2.jpg)
+![Asignación de variables](imagenes/Variables2.png)
 
 ### Desarrollo del script
 
 
-![Script para insertar data en temporales](imagenes/Scripts.jpg)
+![Script para insertar data en temporales](imagenes/Scripts.png)
 
 
 Luego de la inserción de datos en las tablas temporales vienen las Tareas de flujo de datos que nos permiten la limpieza
@@ -51,21 +51,21 @@ otro flujo para SEMINARIO2_DB2_201709282 que son bases de datos de alimentacion 
 flujos alimentamos las tablas dimensionales del DataWarehouse.
 
 
-![Flujo de datos](imagenes/FlujoDatos.jpg)
+![Flujo de datos](imagenes/FlujoDatos.png)
 
 
 Por último tenemos un flujo que extrae la información de todas las fuentes (bases de datos y archivo plano) para insertarlas en las tablas de hechos
 del DataWarehouse.
 
 
-![Llenado de tablas de hechos](imagenes/Hechos.jpg)
+![Llenado de tablas de hechos](imagenes/Hechos.png)
 
 
 Se utilizaron componentes de conexion de base de datos de ADO.NET para una mayor facilidad en el manejo de conexiones y querys.
 
 ### Resultados
 
-![Resultado del count de las tablas del DataWarehouse](imagenes/Resultados.jpg)
+![Resultado del count de las tablas del DataWarehouse](imagenes/Resultados.png)
 
 ## Justificacion del modelo utilizado
 
