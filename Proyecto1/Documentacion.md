@@ -65,7 +65,7 @@ Se utilizaron componentes de conexion de base de datos de ADO.NET para una mayor
 
 ### Resultados
 
-![Resultado del count de las tablas del DataWarehouse](imagenes/Resultados.png)
+![Resultado del count de las tablas del DataWarehouse](imagenes/Resultado.png)
 
 ## Justificacion del modelo utilizado
 
